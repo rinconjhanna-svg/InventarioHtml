@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion Inventario ADSO</title>
+    <link href="css/estilos.css" rel="stylesheet"><!--llama los estilos personalizados-->
+</head>
+
+<body class="login-fondo">
+    <main class="login-card"><!--Contenido principal de la pagina-->
+        <header class="login-encabezado"><!---encabezado de login-->
+            <!--Icono de la tienda-->
+            <i class="bi bi-shop display-4 text-sena"></i>
+            <h1 class="h3 fw-bold">Inventario Sena</h1>
+            <p class="text-secundary mb-0">Ingresa tus credenciales para continuar</p>
+        </header>
+
+        <form action="dashboard.html" method="get"><!--Form perimite crear el contenido de un formulario cuando se envia nos lleva a la ruta medhod nos envia la
+         informacion con get-->
+        <div class="form-floating mb-3"><!--agrupar un contenido en un contenedor-->
+            <input type="email" class="form-control" id="correo" placeholder="sena@correo.com" required><!--type obliga que tenga el @, placeholder el texto de ejemplo required es que es un
+             campo obligatorio-->
+              <label for="correo"><i class="bi bi-envelope me-1"></i>Correo Electronico</label><!--Es una etiqueta de texto que con el for conecta con el input-->
+        </div><p></p>
+
+        <div class="from-floating mb-3">
+            <input type="password" class="from-control" id="clave" placeholder="Minimo 6 caracteres" minlength="6" required><!--type=password oculta lo que escribes,
+             minlength=6 exige al menos 6 caracteres-->
+            <label for="clave"><i class="bi bi-lock me-1"></i>Contraseña</label>
+        </div><p></p>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="from-check">
+           <input class="from-check-imput" type="checkbox" id="recordar"><!--type checkbox es casilla de verificacion-->
+           <label class="from-check-label" for="recordar">Recordarme</label>
+        </div>
+
+        <a href="#" class="small text-decoration-none">Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn btn-sena w-100 py-2 fw-semibold">
+            <i class="bi bi-box-arrow-in-right me-1"></i>Ingresar</button><!--envia el formulario antes revisa loa campos required email y minlength-->
+        </form><!--Cierra el formulario-->
+
+        <p class="login-pie">¿No tienes cuenta?<a href="registro.html" class="text-decoration-none">Registratre</a></p>
+        <footer class="login-pie">2026 SENA - ADSO Mixto</footer><!--pie de pagina-->
+    </main>
+</body>
+</html>
