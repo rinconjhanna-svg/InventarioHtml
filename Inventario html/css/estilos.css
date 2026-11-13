@@ -26,23 +26,24 @@ body{ /*afecta a todo el cuerpo de la pagina*/
 }
 
 .btn-sena{
-    --bs-btn-color: #fff;
     /*color texto*/
-    --bs-btn-bg: var(var(--sena-verde));
+    --bs-btn-color: #fff;
     /*color de fondo*/
-    --bs-btn-border-color: var(var(--sena-verde-oscuro));
+    --bs-btn-bg: var(--sena-azul);
     /*color border*/
+    --bs-btn-border-color: var(--sena-verde-oscuro);
+    /*texto con el mouse encima*/
     --bs-btn-hover-color:#fff;
     /*fondo con el mouse encima*/
-    --bs-btn-hver-bg: var(var(--sena-verde-oscuro));
-    /*borde con el mouse encima*/
-    --bs-btn-border-color: var (var(--sena-verde-oscuro));
+    --bs-btn-hover-bg: var(--sena-verde-oscuro);
+    /*borde en el mouse encima*/
+    --bs-btn-border-color: var(--sena-verde-oscuro);
     /*texto mientras se hace clic*/
     --bs-btn-active-color: #fff;
     /*fondo mientras se hace clic*/
-    --bs-btn-active-bg: var(var(--sena-verde-oscuro));
+    --bs-btn-active-bg: var(--sena-verde-oscuro);
     /*borde mientras se hace clic*/
-    --bs-btn-active-border-color: var(var(--sena-verde-oscuro));
+    --bs-btn-active-border-color: var(--sena-verde-oscuro);
     /*cierra la regla*/
 }
 
@@ -93,7 +94,7 @@ background: linear-gradient(135deg, var(--sena-azul), var(--sena-verde));
     /*ancho completo*/
     width: 100%;
     /*hasta 420px*/
-    max-width: 420;
+    max-width: 420px;
     /*fondo blanco*/
     background-color: #fff;
     /*esquinas redondeada*/
@@ -150,7 +151,7 @@ background: linear-gradient(135deg, var(--sena-azul), var(--sena-verde));
 .sidebar {
     /*fondo azul sena usamos ! IMPORTAR por que en  panallas grandes rootstrap pone offcanvas-ig con fondo transparente usando ! IMPORTAR
     y solo asi podemos priorizarlo*/
-    background-color: var(--sena-azul);
+    background-color: var(--sena-azul) !important;
     /*texto blanco dentro del  menu*/
     color: #fff;
     /*cierra regla*/
