@@ -5,10 +5,10 @@
 /* variables de marca es decir las generales*/
 
 :root{ /* es la raiz del documento las variables declaradas aqui sirven para toda la pagina*/
-    --sena-verde: #a49bdb; /*toda variable inicia con -- el color esta en hexadecimal pero puede  colocarlo en texto*/
-    --sena-verde-oscuro:#d6a4dd;
+    --sena-verde: #1fff02; /*toda variable inicia con -- el color esta en hexadecimal pero puede  colocarlo en texto*/
+    --sena-verde-oscuro:#1c9710;
     --sena-azul: #8bbfdb;
-    --siderbar-ancho: 250px /*ancho menu lateral px es la unidad de medida de css*/
+    --siderbar-ancho: 250px;/*ancho menu lateral px es la unidad de medida de css*/
 }
 
 
@@ -31,11 +31,11 @@ body{ /*afecta a todo el cuerpo de la pagina*/
     /*color de fondo*/
     --bs-btn-bg: var(--sena-azul);
     /*color border*/
-    --bs-btn-border-color: var(--sena-verde-oscuro);
+    --bs-btn-border-color: var(--sena-verde);
     /*texto con el mouse encima*/
     --bs-btn-hover-color:#fff;
     /*fondo con el mouse encima*/
-    --bs-btn-hover-bg: var(--sena-verde-oscuro);
+    --bs-btn-hover-bg: var(--sena-verde);
     /*borde en el mouse encima*/
     --bs-btn-border-color: var(--sena-verde-oscuro);
     /*texto mientras se hace clic*/
@@ -49,7 +49,7 @@ body{ /*afecta a todo el cuerpo de la pagina*/
 
 
 /*la coma aplica la misma regla a varios selectores: los campos con el foco*/
-.form-control:focus, 
+.form-control:focus,
 /*las listas desplegables con foco*/
 .form-select:focus,
 /* y las casillas con foco*/
@@ -57,7 +57,7 @@ body{ /*afecta a todo el cuerpo de la pagina*/
     /*borde verde en lugar del azul del bootstrap*/
     border-color: var(--sena-verde);
     /*halo verde traslucido al rededor del campo*/
-    box-shadow: 0 0 0. 25rem rgba(57, 169, 0, .25);
+    box-shadow: 0 0 0.25rem rgba(57, 169, 0, 0.25);
     /*cierre de la regla*/
 }
 
@@ -225,7 +225,7 @@ background: linear-gradient(135deg, var(--sena-azul), var(--sena-verde));
     /*sin borde general*/
     border: 0;
     /*excepto una franja verde a la izquierda*/
-    border-left: 4px solid var(var(--sena-verde));
+    border-left: 4px solid var(--sena-verde);
     /*anima el movimiento y la sombra en 0.2 segundos*/
     transition: transfrom .2s, box-shadow .2s;
 }
